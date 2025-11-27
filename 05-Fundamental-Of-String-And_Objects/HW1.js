@@ -48,7 +48,19 @@ console.log(result);
 
 
 // Check whether a string contains all the vowels a, e, i, o, u
+let str4 = "hello world from javascript".toLowerCase();
 
+let vowels = ["a", "e", "i", "o", "u"];
+let hasAllVowels = true;
+
+for (let v of vowels) {
+  if (!str4.includes(v)) {
+    hasAllVowels = false;
+    break;
+  }
+}
+
+console.log(hasAllVowels);
 
 
 
