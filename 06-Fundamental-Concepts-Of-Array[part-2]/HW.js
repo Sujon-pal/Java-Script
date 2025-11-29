@@ -144,7 +144,13 @@ let userInfo = [
 
 // Solution 2
 
-
+for (let i = 0; i <= userInfo.length - 1; i++) {
+  console.log(userInfo[i].name, "Scored ", userInfo[i].marks);
+}
+// Solution 3
+for (let student of userInfo) {
+  console.log(student.name, "scored", student.marks);
+}
 
 /*
 Task 7
@@ -165,4 +171,4 @@ Expected Array:
   [5, 6]
 ]
 */
-/**/
+
