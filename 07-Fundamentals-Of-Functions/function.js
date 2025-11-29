@@ -48,5 +48,24 @@ function even(num) {
 let result2 = even(0);
 console.log(result2);
 
+// 🖍️ Function to Count Vowels in a String
+
+function CountVowels(str) {
+  let vowels = "aeoiuAeiou";
+  let count = 0;
+
+  for(let ch of str){
+    if(vowels.includes(ch)){
+        count ++;
+    }
+  }
+  return count;
+}
+console.log(CountVowels("Hello Developer"));
+
 // 🖍️
 
+
+
+
+// 🖍️
