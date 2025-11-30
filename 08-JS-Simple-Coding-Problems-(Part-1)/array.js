@@ -24,4 +24,18 @@ console.log(result.odd);
 
 // Remove duplicate items from an array
 
+function removeDuplicated(array){
+    let uncArray = [];
+    for(let num of array){
+        if(uncArray.includes(num) === false){
+            uncArray.push(num)
+        }
+    }
 
+    return uncArray;
+
+}
+
+let array = [1,2,4,2,3,89]
+let result2 = removeDuplicated(array)
+console.log(result2)
