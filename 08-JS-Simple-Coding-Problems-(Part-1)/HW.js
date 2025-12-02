@@ -32,17 +32,43 @@ function countOccurrences(arr, find) {
 
 let numbers = [5, 6, 11, 12, 98, 5];
 let result = countOccurrences(numbers, 5);
-console.log(result);  
+console.log(result);
 
 // Task-3:
 // Write a function to count the number of vowels in a string.
 
+function countString(str, find) {
+  let count = 0;
+  for (let n of str) {
+    if (n === find) {
+      count++;
+    }
+  }
+  return count;
+}
+
+let str = "Bangladesh Is a Mother Land";
+let result2 = countString(str, "b");
+console.log(result2);
+
 // Task-4:
 // Write a function to find the longest word in a given string.
 
-// sample-input: I am learning Programming to become a programmer
+function longestWord(str) {
+  let word = str.split(" ");
+  let longest = "";
+  for (let w of word) {
+    if (w.length > word.length) {
+      longest = w;
+    }
+  }
+  return longest;
+}
 
-// sample-output: Programming
+console.log(longestWord("I love programming in JavaScript"));
 
 // Task-5:
 // Generate a random number between 10 to 20.
+
+let random = Math.floor( Math.random() * 11 ) + 10
+console.log(random)
