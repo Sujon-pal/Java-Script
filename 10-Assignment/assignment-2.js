@@ -62,7 +62,7 @@ function checkResult(numbers) {
 let result = 20;
 console.log(checkResult(result));
 
-// Valid Proposal
+// 🤷‍♂️ Valid Proposal
 
 function validProposal(person1, person2) {
   // validaton
@@ -97,3 +97,19 @@ let female = {
 };
 
 console.log(validProposal(male, female));
+
+// Calculate time
+
+function calculateTime(numbers) {
+  let totalSecond = 0;
+  for (let num of numbers) {
+    totalSecond += num;
+  }
+
+  let hour = Math.floor(totalSecond / 3600)
+  let minute = Math.floor((totalSecond % 3600)/60);
+  let seconds = totalSecond % 60
+  return hour + "h " + minute + "m " + seconds + "s";
+
+}
+console.log(calculateTime([2000, 450, 3400]));
